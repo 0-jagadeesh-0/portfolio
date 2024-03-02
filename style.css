@@ -25,12 +25,12 @@ body{
 
 .header{
     position: fixed;
-    width: 90%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5rem;
-    margin-left: 3em;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
 }
 
 .header .logo{
@@ -38,10 +38,15 @@ body{
     text-decoration: none;
     font-size: 2.5em;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 .header .menu{
     display: none;
+}
+
+.header nav{
+    padding-right: 2rem;
 }
 
 .header nav a{
@@ -362,9 +367,7 @@ body{
         height: fit-content;
     }
     .header{
-        margin-left: 1rem;
-        margin-right: 2rem;
-        margin-top: 1rem;
+        padding: 0.5rem 0;
     }
     .header .logo{
         font-size: 1.5rem;
