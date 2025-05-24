@@ -23,14 +23,14 @@ export default function Projects() {
     {
       title: 'ShopHere',
       description: 'E-commerce platform with user authentication, cart management, and admin dashboard for inventory control.',
-      image: '/shop-here.jpg',
+      image: '/shop-here.png',
       tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
       github: 'https://github.com/0-jagadeesh-0/shophere'
     },
     {
       title: 'Sorting Visualizer',
       description: 'A sorting algorithm visualizer built with html, css, and javascript.',
-      image: '/project1.png',
+      image: '/sorting-visualizer.png',
       tags: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/0-jagadeesh-0/Sorting-Visualizer',
       demo: 'https://0-jagadeesh-0.github.io/Sorting-Visualizer/'
