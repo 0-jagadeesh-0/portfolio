@@ -50,7 +50,7 @@ const AnimatedText = ({ text, className = '', delay = 0 }: AnimatedTextProps) =>
       {words.map((word, index) => (
         <motion.span
           key={index}
-          className="inline-block mr-2"
+          className="inline-block mr-1 ml-1"
           variants={child}
         >
           {word}

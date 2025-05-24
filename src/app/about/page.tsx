@@ -5,30 +5,40 @@ import Image from 'next/image';
 
 export default function About() {
   const skills = [
-    { category: 'Frontend', items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'] },
-    { category: 'Backend', items: ['Node.js', 'Python', 'Java', 'SQL'] },
-    { category: 'Tools', items: ['Git', 'Docker', 'AWS', 'Linux'] },
+    { category: 'Programming Languages', items: ['TypeScript', 'Go', 'Java', 'JavaScript'] },
+    { category: 'Database & Frameworks', items: ['DynamoDB', 'MongoDB', 'SQL', 'React.js', 'Node.js', 'Spring Boot'] },
+    { category: 'Tools & Others', items: ['Git', 'AWS', 'Grafana', 'Data Structures', 'SOLID principles'] },
   ];
 
   const experience = [
     {
       title: 'Software Engineer',
-      company: 'Payroo',
-      duration: '2024 - Present',
+      company: 'Payroo, Australia (Remote)',
+      duration: 'Jul 2024 - Present',
       description: [
-        'Developed and maintained full-stack web applications using React and Node.js',
-        'Improved application performance by 40% through code optimization',
-        'Collaborated with cross-functional teams to deliver high-quality solutions'
+        'Successfully integrated the subscription plans for 1800+ customers by leveraging the stripe subscription schedules',
       ]
     },
     {
       title: 'Software Engineer',
-      company: 'Nimblework',
-      duration: '2023 - 2024',
+      company: 'NimbleWork,Inc (formerly Digite)',
+      duration: 'Jul 2023 - Jul 2024',
       description: [
-        'Built responsive web interfaces using React and TypeScript',
-        'Implemented RESTful APIs using Node.js and Express',
-        'Participated in code reviews and agile development processes'
+        'Designed and implemented an internal reporting system for viewing and downloading data from the database and analytics system by leveraging the MongoDB scheduled triggers for product analytics',
+        'Implemented a product feedback component with calendly integration for scheduling the product demo calls',
+        'Developed a custom template feature with enhanced customization options',
+        'Designed and implemented a secure Jira integration using OAuth 2.0, enabling seamless task creation and improving project management efficiency',
+        'Enhanced API security by adding essential security headers and documenting configuration settings for consistent security practices',
+        'Designed and developed a custom session management system based on product team requirements'
+      ]
+    },
+    {
+      title: 'Software Engineer Trainee',
+      company: 'NimbleWork,Inc (formerly Digite)',
+      duration: 'Jan 2023 - Jun 2023',
+      description: [
+        'Resolved a critical data inconsistency issue in the resource allocation calendar by enhancing the existing algorithm. The addition of validation improved data quality, resulting in more reliable decision-making processes and better resource utilization',
+        'Followed test-driven development methodologies throughout feature implementation, ensuring robustness and reliability of codebase while reducing bugs and improving maintainability'
       ]
     }
   ];
@@ -56,7 +66,6 @@ export default function About() {
           </div>
           <div className="relative h-64 md:h-auto">
             <div className="bg-primary/20 dark:bg-primary/10 rounded-lg p-2 transform rotate-3 h-full">
-              {/* Replace the src with your actual image */}
               <Image
                 src="/profile-pic.png"
                 alt="Profile picture"

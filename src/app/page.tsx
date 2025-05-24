@@ -9,13 +9,13 @@ import { motion } from 'framer-motion';
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-24 bg-background-light dark:bg-background-dark">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center w-full max-w-6xl px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 items-center w-full max-w-7xl px-4">
         
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="space-y-3 sm:space-y-4 lg:space-y-6 text-left"
+          className="space-y-3 sm:space-y-4 lg:space-y-6 text-center"
         >
           <AnimatedText
             text="Hi, I'm Jagadeesh"
@@ -30,7 +30,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-sm sm:text-base lg:text-lg text-text-light/75 dark:text-text-dark/75 max-w-xl leading-relaxed sm:leading-relaxed lg:leading-loose font-normal"
+            className="text-sm sm:text-base lg:text-lg text-text-light/75 dark:text-text-dark/75 w-full leading-relaxed sm:leading-relaxed lg:leading-loose font-normal"
           >
             I build exceptional digital experiences that combine elegant design with robust functionality.
             Passionate about creating innovative solutions that make a difference.
@@ -39,7 +39,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
-            className="flex gap-4 justify-start lg:justify-start"
+            className="flex gap-4 justify-center"
           >
             <Link
               href="/projects"

@@ -7,22 +7,34 @@ import Image from 'next/image';
 export default function Projects() {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'A full-stack web application built with Next.js, TypeScript, and Tailwind CSS.',
-      image: '/project1.jpg',
-      tags: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-      github: 'https://github.com/yourusername/project1',
-      demo: 'https://project1-demo.com',
+      title: 'Word Counter CLI',
+      description: 'A command-line tool built with Go for counting words in text files.',
+      image: '/word-counter-cli.png',
+      tags: ['Go', 'CLI'],
+      github: 'https://github.com/0-jagadeesh-0/word-counter-cli'
     },
     {
-      title: 'Project 2',
-      description: 'An e-commerce platform with real-time updates and payment integration.',
-      image: '/project2.jpg',
-      tags: ['React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/yourusername/project2',
-      demo: 'https://project2-demo.com',
+      title: 'Hotel Booking System',
+      description: 'A full-stack hotel booking platform with room availability checking and automated room assignment system.',
+      image: '/hotel-booking.png',
+      tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
+      github: 'https://github.com/0-jagadeesh-0/hotel-booking-application-frontend'
     },
-    // Add more projects as needed
+    {
+      title: 'ShopHere',
+      description: 'E-commerce platform with user authentication, cart management, and admin dashboard for inventory control.',
+      image: '/shop-here.jpg',
+      tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
+      github: 'https://github.com/0-jagadeesh-0/shophere'
+    },
+    {
+      title: 'Sorting Visualizer',
+      description: 'A sorting algorithm visualizer built with html, css, and javascript.',
+      image: '/project1.png',
+      tags: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/0-jagadeesh-0/Sorting-Visualizer',
+      demo: 'https://0-jagadeesh-0.github.io/Sorting-Visualizer/'
+    }
   ];
 
   return (
@@ -34,10 +46,6 @@ export default function Projects() {
         className="max-w-7xl mx-auto"
       >
         <h1 className="text-4xl font-bold mb-8 text-primary dark:text-primary-light">My Projects</h1>
-        <p className="text-lg text-text-light dark:text-text-dark mb-12 max-w-3xl">
-          Here are some of the projects I've worked on. Each project represents a unique challenge 
-          and demonstrates different aspects of my technical skills.
-        </p>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
@@ -81,6 +89,7 @@ export default function Projects() {
                     <FaGithub className="text-xl" />
                     <span>Source Code</span>
                   </a>
+                  {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
@@ -90,6 +99,7 @@ export default function Projects() {
                     <FaExternalLinkAlt className="text-lg" />
                     <span>Live Demo</span>
                   </a>
+                  )}
                 </div>
               </div>
             </motion.div>
