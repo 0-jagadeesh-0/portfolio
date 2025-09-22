@@ -32,12 +32,12 @@ export default function About() {
       company: "Payroo, Australia (Remote)",
       duration: "Jul 2024 - Present",
       description: [
-        "● Upgraded 1800+ customer subscriptions in Stripe by leveraging Subscription Schedules, ensuring seamless migration to new pricing without service disruption",
-        "● Designed and developed the complete Locations feature, enabling employers to create work locations and assign employees for better workforce management.",
-        "● Automated termination pay calculations in pay runs, improving accuracy and reducing manual intervention during employee offboarding.",
-        "● Streamlined employee onboarding by integrating a third-party, compliant component for collecting super fund and tax declaration details.",
-        "● Implemented payment agreement setup workflow, enforcing agreement configuration as a prerequisite for processing payroll payments.",
-        "● Designed and implemented a Public Holiday Calendar system, improving payrun accuracy for leave calculations and reducing payroll errors.",
+        "Upgraded 1800+ customer subscriptions in Stripe by leveraging Subscription Schedules, ensuring seamless migration to new pricing without service disruption",
+        "Designed and developed the complete Locations feature, enabling employers to create work locations and assign employees for better workforce management.",
+        "Automated termination pay calculations in pay runs, improving accuracy and reducing manual intervention during employee offboarding.",
+        "Streamlined employee onboarding by integrating a third-party, compliant component for collecting super fund and tax declaration details.",
+        "Implemented payment agreement setup workflow, enforcing agreement configuration as a prerequisite for processing payroll payments.",
+        "Designed and implemented a Public Holiday Calendar system, improving payrun accuracy for leave calculations and reducing payroll errors.",
       ],
     },
     {
@@ -45,12 +45,12 @@ export default function About() {
       company: "NimbleWork,Inc (formerly Digite)",
       duration: "Jul 2023 - Jul 2024",
       description: [
-        "● Designed and implemented an internal reporting system for viewing and downloading data from the database and analytics system by leveraging the MongoDB scheduled triggers for product analytics",
-        "● Implemented a product feedback component with calendly integration for scheduling the product demo calls",
-        "● Developed a custom template feature with enhanced customization options",
-        "● Designed and implemented a secure Jira integration using OAuth 2.0, enabling seamless task creation and improving project management efficiency",
-        "● Enhanced API security by adding essential security headers and documenting configuration settings for consistent security practices",
-        "● Designed and developed a custom session management system based on product team requirements",
+        "Designed and implemented an internal reporting system for viewing and downloading data from the database and analytics system by leveraging the MongoDB scheduled triggers for product analytics",
+        "Implemented a product feedback component with calendly integration for scheduling the product demo calls",
+        "Developed a custom template feature with enhanced customization options",
+        "Designed and implemented a secure Jira integration using OAuth 2.0, enabling seamless task creation and improving project management efficiency",
+        "Enhanced API security by adding essential security headers and documenting configuration settings for consistent security practices",
+        "Designed and developed a custom session management system based on product team requirements",
       ],
     },
     {
@@ -58,8 +58,8 @@ export default function About() {
       company: "NimbleWork,Inc (formerly Digite)",
       duration: "Jan 2023 - Jun 2023",
       description: [
-        "● Resolved a critical data inconsistency issue in the resource allocation calendar by enhancing the existing algorithm. The addition of validation improved data quality, resulting in more reliable decision-making processes and better resource utilization",
-        "● Followed test-driven development methodologies throughout feature implementation, ensuring robustness and reliability of codebase while reducing bugs and improving maintainability",
+        "Resolved a critical data inconsistency issue in the resource allocation calendar by enhancing the existing algorithm. The addition of validation improved data quality, resulting in more reliable decision-making processes and better resource utilization",
+        "Followed test-driven development methodologies throughout feature implementation, ensuring robustness and reliability of codebase while reducing bugs and improving maintainability",
       ],
     },
   ];
