@@ -1,46 +1,67 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   const skills = [
-    { category: 'Programming Languages', items: ['TypeScript', 'Go', 'Java', 'JavaScript'] },
-    { category: 'Database & Frameworks', items: ['DynamoDB', 'MongoDB', 'SQL', 'React.js', 'Node.js', 'Spring Boot'] },
-    { category: 'Tools & Others', items: ['Git', 'AWS', 'Grafana', 'Data Structures', 'SOLID principles'] },
+    {
+      category: "Programming Languages",
+      items: ["TypeScript", "Go", "Java", "JavaScript"],
+    },
+    {
+      category: "Database & Frameworks",
+      items: [
+        "DynamoDB",
+        "MongoDB",
+        "SQL",
+        "React.js",
+        "Node.js",
+        "Spring Boot",
+      ],
+    },
+    {
+      category: "Tools & Others",
+      items: ["Git", "AWS", "Grafana", "Data Structures", "SOLID principles"],
+    },
   ];
 
   const experience = [
     {
-      title: 'Software Engineer',
-      company: 'Payroo, Australia (Remote)',
-      duration: 'Jul 2024 - Present',
+      title: "Software Engineer",
+      company: "Payroo, Australia (Remote)",
+      duration: "Jul 2024 - Present",
       description: [
-        'Successfully integrated the subscription plans for 1800+ customers by leveraging the stripe subscription schedules',
-      ]
+        "● Upgraded 1800+ customer subscriptions in Stripe by leveraging Subscription Schedules, ensuring seamless migration to new pricing without service disruption",
+        "● Designed and developed the complete Locations feature, enabling employers to create work locations and assign employees for better workforce management.",
+        "● Automated termination pay calculations in pay runs, improving accuracy and reducing manual intervention during employee offboarding.",
+        "● Streamlined employee onboarding by integrating a third-party, compliant component for collecting super fund and tax declaration details.",
+        "● Implemented payment agreement setup workflow, enforcing agreement configuration as a prerequisite for processing payroll payments.",
+        "● Designed and implemented a Public Holiday Calendar system, improving payrun accuracy for leave calculations and reducing payroll errors.",
+      ],
     },
     {
-      title: 'Software Engineer',
-      company: 'NimbleWork,Inc (formerly Digite)',
-      duration: 'Jul 2023 - Jul 2024',
+      title: "Software Engineer",
+      company: "NimbleWork,Inc (formerly Digite)",
+      duration: "Jul 2023 - Jul 2024",
       description: [
-        'Designed and implemented an internal reporting system for viewing and downloading data from the database and analytics system by leveraging the MongoDB scheduled triggers for product analytics',
-        'Implemented a product feedback component with calendly integration for scheduling the product demo calls',
-        'Developed a custom template feature with enhanced customization options',
-        'Designed and implemented a secure Jira integration using OAuth 2.0, enabling seamless task creation and improving project management efficiency',
-        'Enhanced API security by adding essential security headers and documenting configuration settings for consistent security practices',
-        'Designed and developed a custom session management system based on product team requirements'
-      ]
+        "● Designed and implemented an internal reporting system for viewing and downloading data from the database and analytics system by leveraging the MongoDB scheduled triggers for product analytics",
+        "● Implemented a product feedback component with calendly integration for scheduling the product demo calls",
+        "● Developed a custom template feature with enhanced customization options",
+        "● Designed and implemented a secure Jira integration using OAuth 2.0, enabling seamless task creation and improving project management efficiency",
+        "● Enhanced API security by adding essential security headers and documenting configuration settings for consistent security practices",
+        "● Designed and developed a custom session management system based on product team requirements",
+      ],
     },
     {
-      title: 'Software Engineer Trainee',
-      company: 'NimbleWork,Inc (formerly Digite)',
-      duration: 'Jan 2023 - Jun 2023',
+      title: "Software Engineer Trainee",
+      company: "NimbleWork,Inc (formerly Digite)",
+      duration: "Jan 2023 - Jun 2023",
       description: [
-        'Resolved a critical data inconsistency issue in the resource allocation calendar by enhancing the existing algorithm. The addition of validation improved data quality, resulting in more reliable decision-making processes and better resource utilization',
-        'Followed test-driven development methodologies throughout feature implementation, ensuring robustness and reliability of codebase while reducing bugs and improving maintainability'
-      ]
-    }
+        "● Resolved a critical data inconsistency issue in the resource allocation calendar by enhancing the existing algorithm. The addition of validation improved data quality, resulting in more reliable decision-making processes and better resource utilization",
+        "● Followed test-driven development methodologies throughout feature implementation, ensuring robustness and reliability of codebase while reducing bugs and improving maintainability",
+      ],
+    },
   ];
 
   return (
@@ -51,17 +72,22 @@ export default function About() {
         transition={{ duration: 0.5 }}
         className="max-w-4xl mx-auto px-4"
       >
-        <h1 className="text-4xl font-bold mb-8 text-primary dark:text-primary-light">About Me</h1>
-        
+        <h1 className="text-4xl font-bold mb-8 text-primary dark:text-primary-light">
+          About Me
+        </h1>
+
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="space-y-4">
             <p className="text-lg text-text-light dark:text-text-dark">
-              Hi! I'm a passionate software engineer with a deep love for creating elegant solutions to complex problems. 
-              My journey in tech has equipped me with a diverse skill set and a keen eye for detail.
+              Hi! I'm a passionate software engineer with a deep love for
+              creating elegant solutions to complex problems. My journey in tech
+              has equipped me with a diverse skill set and a keen eye for
+              detail.
             </p>
             <p className="text-lg text-text-light dark:text-text-dark">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-              or sharing my knowledge with the developer community.
+              When I'm not coding, you can find me exploring new technologies,
+              contributing to open-source projects, or sharing my knowledge with
+              the developer community.
             </p>
           </div>
           <div className="relative h-64 md:h-auto">
@@ -78,7 +104,9 @@ export default function About() {
 
         {/* Work Experience Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">Work Experience</h2>
+          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">
+            Work Experience
+          </h2>
           <div className="space-y-6">
             {experience.map((job, index) => (
               <motion.div
@@ -88,13 +116,24 @@ export default function About() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-primary/10 dark:border-primary/20"
               >
-                <h3 className="text-xl font-semibold text-text-light dark:text-text-dark">{job.title}</h3>
-                <p className="text-primary dark:text-primary-light font-medium">{job.company}</p>
-                <p className="text-text-light/60 dark:text-text-dark/60 mb-4">{job.duration}</p>
+                <h3 className="text-xl font-semibold text-text-light dark:text-text-dark">
+                  {job.title}
+                </h3>
+                <p className="text-primary dark:text-primary-light font-medium">
+                  {job.company}
+                </p>
+                <p className="text-text-light/60 dark:text-text-dark/60 mb-4">
+                  {job.duration}
+                </p>
                 <ul className="space-y-2">
                   {job.description.map((point, i) => (
-                    <li key={i} className="text-text-light/80 dark:text-text-dark/80 flex items-start">
-                      <span className="text-primary dark:text-primary-light mr-2">•</span>
+                    <li
+                      key={i}
+                      className="text-text-light/80 dark:text-text-dark/80 flex items-start"
+                    >
+                      <span className="text-primary dark:text-primary-light mr-2">
+                        •
+                      </span>
                       {point}
                     </li>
                   ))}
@@ -106,7 +145,9 @@ export default function About() {
 
         {/* Skills Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">Skills & Expertise</h2>
+          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">
+            Skills & Expertise
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {skills.map((skillGroup, index) => (
               <motion.div
@@ -121,7 +162,10 @@ export default function About() {
                 </h3>
                 <ul className="space-y-2">
                   {skillGroup.items.map((skill) => (
-                    <li key={skill} className="text-text-light dark:text-text-dark">
+                    <li
+                      key={skill}
+                      className="text-text-light dark:text-text-dark"
+                    >
                       {skill}
                     </li>
                   ))}
@@ -132,13 +176,21 @@ export default function About() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">Education</h2>
+          <h2 className="text-2xl font-bold mb-6 text-primary dark:text-primary-light">
+            Education
+          </h2>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg border border-primary/10 dark:border-primary/20">
             <ul className="space-y-4">
               <li className="border-l-4 border-primary pl-4">
-                <h3 className="text-xl font-semibold text-text-light dark:text-text-dark">National Institute of Technology, Agartala</h3>
-                <p className="text-primary/80 dark:text-primary-light/80">Bachelor's in Electronics & Communication Engineering</p>
-                <p className="text-text-light/60 dark:text-text-dark/60">2019 - 2023</p>
+                <h3 className="text-xl font-semibold text-text-light dark:text-text-dark">
+                  National Institute of Technology, Agartala
+                </h3>
+                <p className="text-primary/80 dark:text-primary-light/80">
+                  Bachelor's in Electronics & Communication Engineering
+                </p>
+                <p className="text-text-light/60 dark:text-text-dark/60">
+                  2019 - 2023
+                </p>
               </li>
             </ul>
           </div>
@@ -146,4 +198,4 @@ export default function About() {
       </motion.div>
     </div>
   );
-} 
+}
