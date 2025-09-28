@@ -25,7 +25,8 @@ export default function Projects() {
       description: 'E-commerce platform with user authentication, cart management, and admin dashboard for inventory control.',
       image: '/shop-here.png',
       tags: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
-      github: 'https://github.com/0-jagadeesh-0/shophere'
+      github: 'https://github.com/0-jagadeesh-0/shophere',
+      demo: 'https://shop-here-app.vercel.app'
     },
     {
       title: 'Sorting Visualizer',
